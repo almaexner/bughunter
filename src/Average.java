@@ -5,6 +5,7 @@ void main() {
         + calculateAverage(new int[]{1, 2, 3, 4, 5}));
     IO.println("Gennemsnittet af en tom liste er: " 
         + calculateAverage(new int[]{}));
+    IO.println("Hej");
 }
 
 double calculateAverage(int[] numbers) {
