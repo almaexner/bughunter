@@ -2,13 +2,13 @@
 
 void main() {
     Person person1 = new Person("Alice", "Smith");
-    String person1FullName = person1.firstName + " " + person1.lastName;
+  //  String person1FullName = person1.firstName + " " + person1.lastName;
 
     Person person2 = new Person("Bob", "Johnson");
-    String person2FullName = person2.firstName + " " + person2.lastName;
+  //  String person2FullName = person2.firstName + " " + person2.lastName;
 
-    IO.println("Hello " + person1FullName);
-    IO.println("Hello " + person2FullName);
+    IO.println("Hello " + person1);
+    IO.println("Hello " + person2);
 }
 
 public class Person {
@@ -18,5 +18,10 @@ public class Person {
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName;
     }
 }
